@@ -1,1 +1,13 @@
 
+spring:
+  mvc:
+    async:
+      request-timeout=100000000000s:
+  rabbitmq:
+    host: 10.249.254.246
+    port: 5672
+    virtual-host: ipos_cashback
+    username: danny
+    password: 123456
+    publisher-confirms: true #消息发送到交换器确认
+    publisher-returns: true #消息发送到队列确认
